@@ -38,7 +38,7 @@ class Pet:
     
     @owner.setter
     def owner(self, new_owner):
-        if not (isinstance(owner, Owner) or not owner):
+        if not (isinstance(new_owner, Owner) or not new_owner):
             raise TypeError("Object is not of type Owner")
         else:
             self._owner = new_owner
